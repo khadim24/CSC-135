@@ -5,7 +5,7 @@ Course: CSCI-135
 Instructor: Tong Yi
 Assignment: Lab1A
 
-This program check if a year is a leap year
+This program check how many months is in a month
 */
 #include <iostream>
 using namespace std;
@@ -13,56 +13,28 @@ using namespace std;
 int main(){
     int year;
     int month;
-    int year1;
+    int days;
 
     cout << "Enter a year: ";
     cin >> year;
-    cout << "Enter a month";
+    cout << "Enter a month: ";
     cin >> month;
 
     // Check if it's a leap year or not
-    if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-        year = year1;
+    if (month == 2) {
+        // February has 28 or 29 days depending on whether it's a leap year
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            days = 29;
+        } else {
+            days = 28;
+        }
+    } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+        // April, June, September, and November have 30 days
+        days = 30;
+    } else {
+        // All other months have 31 days
+        days = 31;
     }
-    if(month = 1){
-        cout << "31 days";
-    }
-    if(month = 2 && year != year1){
-        cout << "28 days";
-    }
-    if(month = 2 && year == year1){
-        cout << "29 days";
-    }
-    if(month = 3){
-        cout << "31 days";
-    }
-    if(month = 4){
-        cout << "30 days";
-    }
-    if(month = 5){
-        cout << "31 days";
-    }
-    if(month = 6){
-        cout << "30 days";
-    }
-    if(month = 7){
-        cout << "31 days";
-    }
-    if(month = 8){
-        cout << "31 days";
-    }
-    if(month = 9){
-        cout << "30 days";
-    }
-    if(month = 10){
-        cout << "31 days";
-    }
-    if(month = 11){
-        cout << "30 days";
-    }
-    if(month = 12){
-        cout << "31 days";
-    }
-
+    cout << days << " days";
     return 0;
-}
+}}
