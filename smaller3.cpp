@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: Tong Yi
 Assignment: Lab1A
 
-This program finds the smaller of the two integers
+This program finds the smaller of the three integers
 */
 #include <iostream>
 using namespace std;
