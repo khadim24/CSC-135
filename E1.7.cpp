@@ -21,7 +21,7 @@ int main(){
     cin >> nametwo;
     cout << "Enter the third name: ";
     cin >> namethree;
-    cout << nameone <<endl << nametwo <<endl << namethree;
+    cout << nameone << "\n" << nametwo << "\n" << namethree;
     return 0;
 
 }
