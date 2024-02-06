@@ -16,11 +16,10 @@ int main(){
     cin >> inte;
     if(inte < 0){
     cout << "negative";
-    } else if(inte = 0){
-        cout << "zero";
-    } else if(inte > 0){
-        cout << "positive";
+    } else if(inte == 0){
+    cout << "zero";
+    } else {
+    cout << "positive";
     }
-return 0;
-
+    return 0;
 }
